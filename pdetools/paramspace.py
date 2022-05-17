@@ -11,17 +11,22 @@ class ParamSpace2D:
         Class to perform parameter space sweeps
 
         Run by calling run function
-        - performs analysis, saves results with each iteration to .csv files, and saves final figure
+        - performs analysis, saves results to a .csv file, and final array as a .txt
         - progress is saved, if interrupted can be resumed without loss by calling the run function again
 
         Computation parameters
-        :param func: function - takes 2 parameters, returns an integer (must not be zero)
+        :param func: Function to evaluate. Must take two parameter values as inputs, and return a single number
+        representing a measure of model behaviour. This can be a float, in the case of a quantitative measure
+        (e.g. asymmetry index, aPAR domain size), or an integer in the case of a quantitative measure
+        (e.g. 0/1 = polarised/not polarised).
         :param p1_range: range for parameter 1 (lower, upper)
         :param p2_range: range for parameter 2 (lower, upper)
         :param resolution: grid resolution
         :param parallel: if True, will run in parallel using number of cores specified
         :param cores: number of cores on machine to use in parallel
-        :param args: additional arguments for func
+        :param args: optional additional arguments for func
+        :param replace: If True, any results already stored in direc will be deleted and replaced. If False, any results
+        already stored in direc will be imported and not replaced.
 
         # Saving parameters
         :param direc: directory to save results. Directory must already exist
@@ -130,6 +135,9 @@ class ParamSpace2D:
         # Import results
         self.res = np.nan * np.zeros([self.n_sims, self.n_sims])
         self.import_res()
+
+        # Specify int/float format
+        f = (self.res % 1) == 0
 
         # Save row by row
         with open(self.direc + '/Res.txt', 'w') as fh:

@@ -1,23 +1,6 @@
 import numpy as np
 
 
-def diffusion(concs, dx=1, pad=True):
-    """
-    Simulate single diffusion time step
-
-    :param concs: 1D array of concentrations across space
-    :param dx: spatial distance between points
-    :return:
-    """
-
-    if pad:
-        concs_ = np.r_[concs[0], concs, concs[-1]]
-        d = concs_[:-2] - 2 * concs_[1:-1] + concs_[2:]
-    else:
-        d = concs[:-2] - 2 * concs[1:-1] + concs[2:]
-    return d / (dx ** 2)
-
-
 def pdeRK(dxdt, X0, Tmax, deltat, t_eval, killfunc=None, stabilitycheck=False, maxstep=None):
     """
 
