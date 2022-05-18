@@ -3,9 +3,9 @@
 
 # Advective transport models
 
-![alt-text](https://github.com/tsmbland/Advection_paper/blob/master/animation.gif)
-
-<img src="animation.gif" width="80%" height="80%"/>
+<p align="center">
+    <img src="animation.gif" width="80%" height="80%"/>
+</p>
 
 ## Instructions
 
