@@ -116,7 +116,7 @@ if __name__ == '__main__':
     # Create animation
     fig, ax1 = plt.subplots()
     ax2 = ax1.twinx()
-    fig.set_size_inches(4, 3)
+    fig.set_size_inches(4, 2.5)
     fig.tight_layout()
     fig.subplots_adjust(right=0.85)
 

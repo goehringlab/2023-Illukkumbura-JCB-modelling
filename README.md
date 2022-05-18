@@ -5,6 +5,8 @@
 
 ![alt-text](https://github.com/tsmbland/Advection_paper/blob/master/animation.gif)
 
+<img src="animation.gif" width="80%" height="80%"/>
+
 ## Instructions
 
 To launch notebooks with binder, click the 'launch binder' button above.
