@@ -1,11 +1,13 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tsmbland/Advection_paper/HEAD?filepath=%2FNotebooks%2FINDEX.ipynb)
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
-## Advective transport models
+# Advective transport models
+
+![alt-text](https://github.com/tsmbland/Advection_paper/blob/master/animation.gif)
 
 ## Instructions
 
-To launch notebooks with binder, click the 'launch binder' button above
+To launch notebooks with binder, click the 'launch binder' button above.
 
 ## Citation
 
