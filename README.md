@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tsmbland/Advection_paper/HEAD?filepath=%2Fnotebook.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tsmbland/Illukkumbura_et_al/HEAD?filepath=%2Fnotebook.ipynb)
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
 # Illukkumbura et al., 2022
