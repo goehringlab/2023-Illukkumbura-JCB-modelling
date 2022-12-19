@@ -1,25 +1,28 @@
 import numpy as np
+from typing import Optional, Tuple
 
 
-def pdeRK(dxdt, X0, Tmax, deltat, t_eval, killfunc=None, stabilitycheck=False, maxstep=None):
+def pdeRK(dxdt: callable, X0: list, Tmax: float, deltat: float, t_eval: np.ndarray, killfunc: Optional[callable] = None,
+          stabilitycheck: bool = False, maxstep: Optional[float] = None) -> Tuple[list, float, list, np.ndarray]:
     """
-
     Function for solving system of PDEs using adaptive Runge-Kutta method
     Adapted from Hubatsch et al., 2019 (see https://github.com/lhcgeneva/PARmodelling)
 
-    :param dxdt: function, takes list of 1D arrays corresponding to concentrations over space, returns list of gradients
-    :param X0: starting conditions, list of 1D arrays
-    :param Tmax: maximum time
-    :param deltat: initial timestep
-    :param t_eval: array of timepoints to save
-    :param killfunc: optional func, takes same input as dxdt, integration will terminate when func returns True
-    :param stabilitycheck: if True, will terminate integration when system changes by less that 1% per minute
+    Args:
+        dxdt: function, takes list of 1D arrays corresponding to concentrations over space, returns list of gradients
+        X0: starting conditions, list of 1D arrays
+        Tmax: maximum time
+        deltat: initial timestep
+        t_eval: array of timepoints to save
+        killfunc: optional func, takes same input as dxdt, integration will terminate when func returns True
+        stabilitycheck: if True, will terminate integration when system changes by less that 1% per minute
+        maxstep:
 
-    Returns
-    X: final state
-    time: final time
-    X_stored: saved states according to t_eval
-    t_stored: times corresponding to X_stored. Will not be exactly the same as t_eval but should be close
+    Returns:
+        X: final state
+        time: final time
+        X_stored: saved states according to t_eval
+        t_stored: times corresponding to X_stored. Will not be exactly the same as t_eval but should be close
 
     """
 
