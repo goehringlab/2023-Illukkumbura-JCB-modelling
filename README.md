@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tsmbland/Illukkumbura_et_al/HEAD?filepath=%2Fnotebook.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tsmbland/Illukkumbura_et_al/HEAD?filepath=%2Fscripts/notebook.ipynb)
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
 # Illukkumbura et al., 2022
@@ -6,7 +6,7 @@
 Code for performing PDE modelling of advective transport in Illukkumbura et al., 2022
 
 <p align="center">
-    <img src="animation.gif" width="80%" height="80%"/>
+    <img src="scripts/animation.gif" width="80%" height="80%"/>
 </p>
 
 ## Instructions
