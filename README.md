@@ -15,6 +15,11 @@ To launch the interactive notebook with binder, click the 'launch binder' button
 
 ## Citation
 
+This work is featured in the following preprint article:
+
+Rukshala Illukkumbura, Nisha Hirani, Joana Borrego-Pinto, Tom Bland, KangBo Ng, Lars Hubatsch, Jessica McQuade, Robert G. Endres, Nathan W. Goehring
+bioRxiv 2022.09.05.506621; doi: https://doi.org/10.1101/2022.09.05.506621
+
 ## License
 
 This work is licensed under a
