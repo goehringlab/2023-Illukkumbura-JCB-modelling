@@ -1,4 +1,4 @@
-from pdeRK import pdeRK
+from pde_rk import pde_rk
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import animation
@@ -85,7 +85,7 @@ class Model:
             func = self.dxdt_no_flow
 
         # Run simulation
-        soln, time, solns, times = pdeRK(dxdt=func, X0=[start, ], Tmax=Tmax, deltat=0.01, t_eval=t_eval,
+        soln, time, solns, times = pde_rk(dxdt=func, X0=[start, ], Tmax=Tmax, deltat=0.01, t_eval=t_eval,
                                          killfunc=killfunc, maxstep=maxstep)
         # Return results
         return soln, time, solns, times
