@@ -11,7 +11,9 @@ Code for performing PDE modelling of advective transport in Illukkumbura et al.,
 
 ## Instructions
 
-To launch the interactive notebook with binder, click the 'launch binder' button above.
+See [this notebook](scripts/notebook.ipynb) for a demonstration of the model
+
+To run in the cloud, click the 'launch binder' button above
 
 ## Citation
 
