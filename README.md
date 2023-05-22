@@ -11,9 +11,30 @@ Code for performing PDE modelling of advective transport in Illukkumbura et al.,
 
 ## Instructions
 
-See [this notebook](scripts/notebook.ipynb) for a demonstration of the model
+See [this notebook](scripts/notebook.ipynb) for a demonstration of the model. To run the notebook interactively you have two options:
 
-To run in the cloud, click the 'launch binder' button above
+####  Option 1: Cloud
+
+To run in the cloud, click the 'launch binder' button at the top. Please note that it may take several minutes to open the notebook
+
+
+#### Option 2: Local
+
+Step 1: Open [Docker](https://www.docker.com/products/docker-desktop/) and pull the docker image (copy and paste into the terminal)
+
+    docker pull tsmbland/illukkumbura-et-al-2023
+
+Step 2: Run the docker container (copy and paste into the terminal)
+
+    docker run -p 8888:8888 tsmbland/illukkumbura-et-al-2023
+
+This will print a URL for you to copy and paste into your web browser to open up Jupyter
+
+Step 3: When finished, delete the container and image
+    
+    docker container prune -f
+    docker image rm tsmbland/illukkumbura-et-al-2023
+
 
 ## Citation
 
