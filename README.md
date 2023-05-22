@@ -1,9 +1,9 @@
-# Illukkumbura et al., 2022
+# Illukkumbura et al., 2023
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/goehringlab/Illukkumbura-et-al-2022/HEAD?filepath=%2Fscripts/notebook.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/goehringlab/Illukkumbura-et-al-2023/HEAD?filepath=%2Fscripts/notebook.ipynb)
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
-Code for performing PDE modelling of advective transport in Illukkumbura et al., 2022
+Code for performing PDE modelling of advective transport in Illukkumbura et al., 2023
 
 <p align="center">
     <img src="scripts/animation.gif" width="80%" height="80%"/>
