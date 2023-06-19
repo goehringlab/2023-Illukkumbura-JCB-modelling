@@ -24,18 +24,18 @@ To run in the cloud using Binder, click here: [![Binder](https://mybinder.org/ba
 
 Step 1: Open [Docker](https://www.docker.com/products/docker-desktop/) and pull the docker image (copy and paste into the terminal)
 
-    docker pull tsmbland/illukkumbura-et-al-2023
+    docker pull tsmbland/2023-illukkumbura-jcb-modelling
 
 Step 2: Run the docker container (copy and paste into the terminal)
 
-    docker run -p 8888:8888 tsmbland/illukkumbura-et-al-2023
+    docker run -p 8888:8888 tsmbland/2023-illukkumbura-jcb-modelling
 
 This will print a URL for you to copy and paste into your web browser to open up Jupyter
 
 Step 3: When finished, delete the container and image
     
     docker container prune -f
-    docker image rm tsmbland/illukkumbura-et-al-2023
+    docker image rm tsmbland/2023-illukkumbura-jcb-modelling
 
 
 ## Citation
