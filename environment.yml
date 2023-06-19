@@ -1,4 +1,4 @@
-name: advection_paper
+name: 2023-Illukkumbura-JCB-modelling
 channels:
   - conda-forge
   - defaults
