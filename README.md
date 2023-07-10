@@ -11,7 +11,7 @@ Code for performing PDE modelling of advective transport in Illukkumbura et al.,
 
 ## Instructions
 
-See [this notebook](scripts/notebook.ipynb) for a demonstration of the model. To run the notebook interactively you have two options:
+See [this notebook](https://nbviewer.org/github/goehringlab/2023-Illukkumbura-JCB-modelling/blob/master/scripts/notebook.ipynb) for a demonstration of the model. To run the notebook interactively you have two options:
 
 ####  Option 1: Binder
 
