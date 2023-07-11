@@ -1,6 +1,6 @@
 # Illukkumbura et al., 2023
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/goehringlab/Illukkumbura-et-al-2023/HEAD?filepath=%2Fscripts/notebook.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/goehringlab/2023-Illukkumbura-JCB-modelling/HEAD?filepath=%2Fscripts/notebook.ipynb)
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
 Code for performing PDE modelling of advective transport in Illukkumbura et al., 2023
@@ -11,37 +11,38 @@ Code for performing PDE modelling of advective transport in Illukkumbura et al.,
 
 ## Instructions
 
-See [this notebook](scripts/notebook.ipynb) for a demonstration of the model. To run the notebook interactively you have two options:
+See [this notebook](https://nbviewer.org/github/goehringlab/2023-Illukkumbura-JCB-modelling/blob/master/scripts/notebook.ipynb) for a demonstration of the model. To run the notebook interactively you have two options:
 
-####  Option 1: Cloud
+####  Option 1: Binder
 
-To run in the cloud, click the 'launch binder' button at the top. Please note that it may take several minutes to open the notebook
+To run in the cloud using Binder, click here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/goehringlab/2023-Illukkumbura-JCB-modelling/HEAD?filepath=%2Fscripts/notebook.ipynb)
+
+(Please note that it may take several minutes to open the notebook)
 
 
-#### Option 2: Local
+#### Option 2: Docker
 
 Step 1: Open [Docker](https://www.docker.com/products/docker-desktop/) and pull the docker image (copy and paste into the terminal)
 
-    docker pull tsmbland/illukkumbura-et-al-2023
+    docker pull tsmbland/2023-illukkumbura-jcb-modelling
 
 Step 2: Run the docker container (copy and paste into the terminal)
 
-    docker run -p 8888:8888 tsmbland/illukkumbura-et-al-2023
+    docker run -p 8888:8888 tsmbland/2023-illukkumbura-jcb-modelling
 
 This will print a URL for you to copy and paste into your web browser to open up Jupyter
 
 Step 3: When finished, delete the container and image
     
     docker container prune -f
-    docker image rm tsmbland/illukkumbura-et-al-2023
+    docker image rm tsmbland/2023-illukkumbura-jcb-modelling
 
 
 ## Citation
 
-This work is featured in the following preprint article:
+This work is featured in the following article:
 
-Rukshala Illukkumbura, Nisha Hirani, Joana Borrego-Pinto, Tom Bland, KangBo Ng, Lars Hubatsch, Jessica McQuade, Robert G. Endres, Nathan W. Goehring
-bioRxiv 2022.09.05.506621; doi: https://doi.org/10.1101/2022.09.05.506621
+Rukshala Illukkumbura, Nisha Hirani, Joana Borrego-Pinto, Tom Bland, KangBo Ng, Lars Hubatsch, Jessica McQuade, Robert G. Endres, Nathan W. Goehring; Design principles for selective polarization of PAR proteins by cortical flows; J Cell Biol (2023) 222 (8): e202209111; doi: [https://doi.org/10.1101/2022.09.05.506621](https://doi.org/10.1083/jcb.202209111)
 
 ## License
 
