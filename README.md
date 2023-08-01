@@ -1,22 +1,26 @@
-# Illukkumbura et al., 2023
+# Design principles for selective polarization of PAR proteins by cortical flows (modelling)
 
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
-Code for performing PDE modelling of advective transport in Illukkumbura et al., 2023
+Code for performing PDE modelling of advective transport in the paper [Design principles for selective polarization of PAR proteins by cortical flows](https://doi.org/10.1083/jcb.202209111)
 
 <p align="center">
     <img src="scripts/animation.gif" width="80%" height="80%"/>
 </p>
 
 
-Run the interactive notebook here: <a target="_blank" href="https://colab.research.google.com/github/goehringlab/2023-Illukkumbura-JCB-modelling/blob/master/scripts/notebook.ipynb">
+Run the interactive notebook for a demonstration of the model: 
+
+<a target="_blank" href="https://colab.research.google.com/github/goehringlab/2023-Illukkumbura-JCB-modelling/blob/master/scripts/notebook.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
+</a>  
+
+## Analysis scripts
+
+Scripts used to perfom the modelling analysis in the paper are found in the _analysis_ folder
 
 ## Citation
-
-This work is featured in the following article:
 
 Rukshala Illukkumbura, Nisha Hirani, Joana Borrego-Pinto, Tom Bland, KangBo Ng, Lars Hubatsch, Jessica McQuade, Robert G. Endres, Nathan W. Goehring; Design principles for selective polarization of PAR proteins by cortical flows; J Cell Biol (2023) 222 (8): e202209111; doi: [https://doi.org/10.1101/2022.09.05.506621](https://doi.org/10.1083/jcb.202209111)
 
