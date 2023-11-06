@@ -4,11 +4,10 @@ import sys
 home_direc = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(home_direc)
 sys.path.append(home_direc + '/..')
-sys.path.append(home_direc + '/../Modules/polaritymodel')
-save_direc = home_direc + '/../../../ModelData/advection_v2/'
+save_direc = home_direc + '/../../../../ModelData/advection/'
 
 from Model import Model
-from polaritypde import ParamSpace2D
+from paramspace2d import ParamSpace2D
 import numpy as np
 import copy
 
@@ -246,5 +245,5 @@ if int(sys.argv[1]) in range(5 * len_param_range_groups, 6 * len_param_range_gro
 ###############################################################################################
 
 
-ParamSpace2D(func, p1_range=p1_range, p2_range=p2_range, cores=32, resolution0=11, direc=save_direc + sys.argv[1],
+ParamSpace2D(func, p1_range=p1_range, p2_range=p2_range, resolution0=11, path=save_direc + sys.argv[1],
              parallel=True, replace=True).run()

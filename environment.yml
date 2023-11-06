@@ -11,3 +11,4 @@ dependencies:
   - pip
   - pip:
       - pde-rk==0.1.2
+      - parameter-space-2d==0.1.4

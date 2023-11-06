@@ -4,7 +4,7 @@ import sys
 home_direc = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(home_direc)
 sys.path.append(home_direc + '/..')
-save_direc = home_direc + '/../../../ModelData/advection_two_species/'
+save_direc = home_direc + '/../../../../ModelData/advection_two_species/'
 
 from Model2species import Model
 from paramspace2d import ParamSpace2D
@@ -124,5 +124,5 @@ if int(sys.argv[1]) in range(2 * len_param_range_groups, 3 * len_param_range_gro
 ###############################################################################################
 
 
-ParamSpace2D(func, p1_range=p1_range, p2_range=p2_range, cores=32, resolution0=11, direc=save_direc + sys.argv[1],
+ParamSpace2D(func, p1_range=p1_range, p2_range=p2_range, resolution0=11, path=save_direc + sys.argv[1],
              parallel=True, replace=True).run()
