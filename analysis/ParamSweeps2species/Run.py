@@ -125,4 +125,4 @@ if int(sys.argv[1]) in range(2 * len_param_range_groups, 3 * len_param_range_gro
 
 
 ParamSpace2D(func, p1_range=p1_range, p2_range=p2_range, resolution0=11, path=save_direc + sys.argv[1],
-             parallel=True, replace=True).run()
+             parallel=True, cores=32, replace=True).run()
